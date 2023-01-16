@@ -18,7 +18,7 @@ const App = (props) => {
                 <div className='app-wrapper-content'>
                     <Routes>
                         <Route path="/profile" element={<Profile/>}/>
-                        {/*exact для строгого роута*/}
+                        exact для строгого роута
                         <Route path="/dialogs" element={<Dialogs/>}/>
                     </Routes>
 

@@ -29,6 +29,9 @@ const messagesData = [
     {id: 3, message: "okk"},
     {id: 4, message: "yeeeahh"}]
 
+const dialogsElements = dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id} />);
+const messagesElements = messagesData.map( mess => <Message message={mess.message}/>);
+
 const Dialogs = () => {
     return (
 
