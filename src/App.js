@@ -20,7 +20,7 @@ const App = (props) => {
                     <Routes>
                         <Route path="/profile" element={<Profile posts={props.posts}/>}/>
                       {/*  exact для строгого роута*/}
-                        <Route path="/dialogs" element={<Dialogs/>}/>
+                        <Route path="/dialogs" element={<Dialogs dialogs={props.dialogs} messages={props.messages}/>}/>
                     </Routes>
                 </div>
             </div>

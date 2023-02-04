@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import message from "./components/Dialogs/Message/Message";
 
 const posts = [
     {id: 1, message: "post about my trip1", likesCount: 12},
@@ -26,7 +27,7 @@ const messages = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App posts={posts}/>
+    <App posts={posts} dialogs={dialogs} messages={messages}/>
   </React.StrictMode>
 );
 
