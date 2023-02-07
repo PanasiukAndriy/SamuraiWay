@@ -4,30 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import message from "./components/Dialogs/Message/Message";
+import state from './redux/state';
 
-const posts = [
-    {id: 1, message: "post about my trip1", likesCount: 12},
-    {id: 2, message: "post about my trip2", likesCount: 25}
-]
 
-const dialogs = [
-    {id: 1, name: "dima"},
-    {id: 2, name: "ira"},
-    {id: 3, name: "sasha"},
-    {id: 4, name: "oleh"}
-]
 
-const messages = [
-    {id: 1, message: "hi"},
-    {id: 2, message: "howayou"},
-    {id: 3, message: "okk"},
-    {id: 4, message: "yeeeahh"}
-]
-
+console.log(state);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App posts={posts} dialogs={dialogs} messages={messages}/>
+    <App state={state}/>
   </React.StrictMode>
 );
 
