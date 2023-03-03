@@ -1,3 +1,5 @@
+import post from "../components/Profile/MyPosts/Post/Post";
+
 const state = {
     profilePage: {
         posts: [
@@ -19,6 +21,15 @@ const state = {
             {id: 4, name: "oleh"}
         ]
     }
+}
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 0
+    };
+    state.profilePage.posts.push(newPost);
 }
 
 export default state
