@@ -7,6 +7,7 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import UsersContainer from "./components/Users/UsersContainer";
 
 const App = (props) => {
 
@@ -25,6 +26,9 @@ const App = (props) => {
                       {/*  exact для строгого роута*/}
                         <Route path="/dialogs"
                                element={<DialogsContainer store={props.store}/>}/>
+
+                        <Route path="/users"
+                               element={<UsersContainer/>}/>
                     </Routes>
                 </div>
             </div>
