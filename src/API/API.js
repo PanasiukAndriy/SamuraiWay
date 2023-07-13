@@ -13,5 +13,13 @@ export const usersAPI = {
     getUsers(currentPage = 1, pageSize = 10) {
         return instAxios.get(`users?page=${currentPage}&count=${pageSize}`)
             .then(response => response.data);
+    },
+    follow(userId){
+        return instAxios.post(`https://social-network.samuraijs.com/api/1.0/follow/${userId}`)
+
+    },
+    unfollow(userId){
+        return  instAxios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${userId}`)
+
     }
 }
