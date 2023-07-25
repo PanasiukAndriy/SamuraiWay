@@ -21,9 +21,6 @@ const Dialogs = (props) => {
         props.updateNewMessageBody(body)
     };
 
-    if(props.isAuth === false){
-        return  <Navigate to="/login"/>
-    }
 
 
     return (
@@ -44,4 +41,6 @@ const Dialogs = (props) => {
         </div>
     )
 }
+
+
 export default Dialogs;
